@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "idempotent-backfill-pattern"
+version = "0.1.0"
+description = "A minimal, backend-agnostic pattern for making daily sync and weekly backfill jobs converge to the same idempotent MERGE."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "daichiz-dev" }]
+keywords = ["idempotency", "backfill", "etl", "data-pipeline", "merge", "upsert"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+Homepage = "https://github.com/daichiz-dev/idempotent-backfill-pattern"
+
+[tool.setuptools.packages.find]
+where = ["src"]
